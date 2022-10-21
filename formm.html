@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Registrasi</title>
+		<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		background-image: url('ss.jpg');
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+	}
+	h1 {
+		border: 5px solid black;		
+		text-align: center;
+		font-size: 2em;
+		color: red;
+	}
+	nav .logo {
+		font-size: 25px;
+		line-height: 80px;
+		font-weight: bold;
+		color: white;
+		padding: 0 20px;
+		text-transform: uppercase;
+	}
+	.log{
+		display:inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 1300px;
+		height: 500px;
+	}
+	.log h2{
+		font-size: 20px;
+		line-height: 50px;
+		font-weight: bold;
+		color: white;
+		padding: 5px 10px;
+		border: 3px solid black;
+	}
+	nav{
+		height: 70px;
+		background-color: black;
+	}
+	ul{
+		float: right;
+		margin-right: 70px;
+	}
+	ul li {
+		display: inline-block;
+		line-height: 80px;
+		margin: 0 5px;
+	}
+	ul li a {
+		font-size: 17px;
+		color: white;
+		padding: 10px 17px;
+		border-radius: 3px;
+		text-decoration: none;
+	}
+	.active {
+		background-color: whitesmoke;
+		color: black;
+		padding: 10px;
+		border: 5px;
+	}
+	a:hover {
+		background-color: grey;
+	}
+	input:hover {
+		background-color: grey;
+	}
+	.fom {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		width: 600px;
+		height: 200px;
+	}
+	.fom label {
+		display: block;
+		font-size: 20px;
+		padding: 5px;
+		color: white;
+	}
+	input {
+		display: inline-flex;
+		justify-content: center;
+		justify-items: center;
+		width: 100%;
+		margin: 5px;
+		padding: 6px;
+		border-radius: 5px;
+		border: 1px solid grey;
+		cursor: pointer;
+	}
+	.radio {
+		display: inline-flex;
+		align-content: center;
+		justify-content: center;
+		justify-items: center;
+		width: 20%;
+		margin: 5px;
+		border-radius: 5px;
+		border: 2px solid grey;
+		color: whitesmoke;
+	}
+	.hob {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		justify-items: center;
+		width: 20%;
+		margin: 5px;
+		border-radius: 5px;
+		border: 2px solid grey;
+		color: whitesmoke;
+	}
+		.sel {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		justify-items: center;
+		width: 20%;
+		margin: 5px;
+		border-radius: 5px;
+		border: 2px solid grey;
+		color: whitesmoke;
+	}
+		.komen {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		justify-items: center;
+		width: 20%;
+		margin: 5px;
+		border-radius: 5px;
+		border: 2px solid grey;
+		color: whitesmoke;
+	}
+	</style>
+</head>
+	<nav>
+		<label class="logo">Form</label>
+	<ul>
+		<li><a href="#" class="active">HOME</a></li>
+		<li><a href="jadwal.html" class="active">JADWAL</a></li>
+		<li><a href="formm.html" class="active">FORM REGISTRASI</a></li>
+		<li><a href="biodataa.html" class="active">PROFIL</a></li>
+	</ul>
+	</nav>
+</head>
+<body>
+	<div class="fom">
+		<form action="masuk.php" method="POST">
+		<center><label for="name">Email</label></center>
+		<input type="text">
+		<center><label for="password">Password</label></center>
+		<input type="password">
+	</div>
+	<div class="radio">
+		<center><label>Jenis kelamin:</label></center>
+    	<label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+    	<label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+	</div>
+	<div class="hob">Hobi
+		<input type="checkbox" name="">Futsal
+		<input type="checkbox" name="">Basket
+		<input type="checkbox" name="">Golf
+		<input type="checkbox" name="">Tenis
+	</div>
+	<div class="sel">Asal Kota
+	<select name="asal kota">
+		<option value="Jakarta">Jakarta</option>
+		<option value="bandung">Bandung</option>
+		<option value="semarang">Semarang</option>
+		<option value="jogja">Yogyakarta</option>
+		<option value="sura">Surabaya</option>
+	</select>
+	</div>
+	<div class="sel"> Jurusan
+		<select name="jurusan">
+		<option value="si">Sistem Informasi</option>
+		<option value="bandung">Bahasa Inggris</option>
+		<option value="semarang">Manajemen</option>
+	</select>
+	</div>
+	<div class="komen">Berikan Komentar
+		<textarea name="komentar" rows="5" cols="30">
+		</textarea>
+	</div>
+	<div class="fom">
+		<input type="submit" name="submit" value="Login"/>
+	</div>
+</body>
+</html>
